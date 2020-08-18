@@ -41,19 +41,31 @@ h1 {
 }
 #side-bar ul li {
   margin: 50px 0 50px 10px;
-  border-bottom: solid black 1px;
-  text-align: right;
+  text-align: left;
+  transition: 0.5s;
 }
 #side-bar ul li a {
   margin-left: 20px;
   color: black;
   text-decoration: none;
+  transition: 0.5s;
+}
+#side-bar ul li a:hover {
+  padding-left: 10px;
+  transition: 0.5s;
+}
+#side-bar ul li p {
+  text-align: left;
+  margin: 0;
+  height: 1px;
+  width: 60px;
+  border-bottom: black solid 1px;
 }
 #outer-frame {
   padding: 0 30px 0 30px;
 }
 #intro {
-  background-color: gainsboro;
+  background-color: #D1C8B6;
 }
 #intro #hello-box {
   width: 100%;
@@ -62,12 +74,12 @@ h1 {
 }
 #intro #hello-box h2 {
   position: absolute;
-  top: -70px;
+  top: -8vw;
   left: -5px;
   z-index: 50;
   color: white;
   font-weight: bold;
-  font-size: 400px;
+  font-size: 35vw;
   text-align: left;
 }
 #intro #hello-box p {
@@ -87,17 +99,17 @@ h1 {
   text-align: center;
   display: block;
 }
-#about-card {
-  position: relative;
+.card {
   padding: 150px 80px;
   text-align: center;
+  position: relative;
 }
-#about-card div {
+.card div {
   text-align: left;
   position: relative;
   z-index: 55;
 }
-#about-card div h2 {
+.card div h2 {
   font-size: 80px;
 }
 #about-card div p {
@@ -116,20 +128,21 @@ h1 {
   transition: 0.5s;
 }
 #about-card div a:hover {
-  background-color: firebrick;
+  background-color: #948F88;
   transition: 0.5s;
 }
 #about-card img {
   position: absolute;
-  top: 90vh;
+  top: 100vh;
   right: 60px;
   z-index: 54;
   height: 70%;
 }
 #expiriences-card {
-  position: relative;
-  padding: 150px 80px;
-  background-color: gainsboro;
+  background-color: #D1C8B6;
   color: white;
+}
+#expiriences-card div h2 {
+  padding: 5px 10px;
 }
 /*# sourceMappingURL=indexStyles.css.map */

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
 
+@bg-color: #D1C8B6;
+@darker-bg: #948F88;
+
 * {
   margin: 0 auto;
   font-family: 'Sen', sans-serif;
@@ -31,13 +34,27 @@ h1 {
 
     li {
       margin: 50px 0 50px 10px;
-      border-bottom: solid black 1px;
-      text-align: right;
+      text-align: left;
+      transition: 0.5s;
 
       a {
         margin-left: 20px;
         color: black;
         text-decoration: none;
+        transition: 0.5s;
+      }
+
+      a:hover {
+        padding-left: 10px;
+        transition: 0.5s;
+      }
+
+      p {
+        text-align: left;
+        margin: 0;
+        height: 1px;
+        width: 60px;
+        border-bottom: black solid 1px;
       }
     }
   }
@@ -48,7 +65,7 @@ h1 {
 }
 
 #intro {
-  background-color: gainsboro;
+  background-color: @bg-color;
 
   #hello-box {
     width: 100%;
@@ -57,12 +74,12 @@ h1 {
 
     h2 {
       position: absolute;
-      top: -70px;
+      top: -8vw;
       left: -5px;
       z-index: 50;
       color: white;
       font-weight: bold;
-      font-size: 400px;
+      font-size: 35vw;
       text-align: left;
     }
 
@@ -88,20 +105,24 @@ h1 {
   }
 }
 
-#about-card {
-  position: relative;
+.card {
   padding: 150px 80px;
   text-align: center;
+  position: relative;
 
   div {
     text-align: left;
     position: relative;
     z-index: 55;
 
-    h2{
+    h2 {
       font-size: 80px;
     }
+  }
+}
 
+#about-card {
+  div {
     p {
       margin: 40px;
     }
@@ -120,14 +141,14 @@ h1 {
     }
 
     a:hover {
-      background-color: firebrick;
+      background-color: @darker-bg;
       transition: 0.5s;
     }
   }
 
   img {
     position: absolute;
-    top: 90vh;
+    top: 100vh;
     right: 60px;
     z-index: 54;
     height: 70%;
@@ -135,9 +156,12 @@ h1 {
 }
 
 #expiriences-card {
-  position: relative;
-  padding: 150px 80px;
-
-  background-color: gainsboro;
+  background-color: @bg-color;
   color: white;
+
+  div {
+    h2 {
+      padding: 5px 10px;
+    }
+  }
 }
