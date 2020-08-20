@@ -2,6 +2,9 @@
 
 @bg-color: #D1C8B6;
 @darker-bg: #948F88;
+@gray: #6E6E6E;
+
+
 
 * {
   margin: 0 auto;
@@ -69,7 +72,7 @@ h1 {
 
   #hello-box {
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     position: relative;
 
     h2 {
@@ -98,7 +101,7 @@ h1 {
     z-index: 60;
 
     img {
-      width: 100%;
+      width: 90%;
       text-align: center;
       display: block;
     }
@@ -107,7 +110,6 @@ h1 {
 
 .card {
   padding: 150px 80px;
-  text-align: center;
   position: relative;
 
   div {
@@ -137,12 +139,14 @@ h1 {
       font-size: 10px;
       padding: 15px 20px;
       border-radius: 50px;
+      border: black solid 2px;
       transition: 0.5s;
     }
 
     a:hover {
-      background-color: @darker-bg;
-      transition: 0.5s;
+      background-color: white;
+      color: black;
+      transition: 0.3s;
     }
   }
 
@@ -162,6 +166,63 @@ h1 {
   div {
     h2 {
       padding: 5px 10px;
+      text-align: left;
     }
+
+    #experiences {
+      width: fit-content;
+
+      .job {
+        margin-top: 80px;
+        text-align: right;
+
+        .right-block{
+          text-align: left;
+          float: right;
+
+          h3 {
+            display: block;
+            padding: 10px;
+            margin: 0;
+            background-color: @gray;
+            color: white;
+            font-size: 30px;
+            text-transform: uppercase;
+            width: fit-content;
+          }
+        }
+
+        .left-block {
+          float: left;
+          margin-right: 40px;
+
+          .year {
+            text-align: right;
+            font-size: 15px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 20px;
+          }
+
+          .company {
+            text-align: right;
+            font-weight: bold;
+            margin: 0 0 10px 15px;
+          }
+
+          .desc {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+#contact {
+  background-color: black;
+
+  h2 {
+    color: white;
   }
 }

@@ -69,7 +69,7 @@ h1 {
 }
 #intro #hello-box {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   position: relative;
 }
 #intro #hello-box h2 {
@@ -95,13 +95,12 @@ h1 {
   z-index: 60;
 }
 #intro #portrait img {
-  width: 100%;
+  width: 90%;
   text-align: center;
   display: block;
 }
 .card {
   padding: 150px 80px;
-  text-align: center;
   position: relative;
 }
 .card div {
@@ -125,11 +124,13 @@ h1 {
   font-size: 10px;
   padding: 15px 20px;
   border-radius: 50px;
+  border: black solid 2px;
   transition: 0.5s;
 }
 #about-card div a:hover {
-  background-color: #948F88;
-  transition: 0.5s;
+  background-color: white;
+  color: black;
+  transition: 0.3s;
 }
 #about-card img {
   position: absolute;
@@ -144,5 +145,52 @@ h1 {
 }
 #expiriences-card div h2 {
   padding: 5px 10px;
+  text-align: left;
+}
+#expiriences-card div #experiences {
+  width: fit-content;
+}
+#expiriences-card div #experiences .job {
+  margin-top: 80px;
+  text-align: right;
+}
+#expiriences-card div #experiences .job .right-block {
+  text-align: left;
+  float: right;
+}
+#expiriences-card div #experiences .job .right-block h3 {
+  display: block;
+  padding: 10px;
+  margin: 0;
+  background-color: #6E6E6E;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+#expiriences-card div #experiences .job .left-block {
+  float: left;
+  margin-right: 40px;
+}
+#expiriences-card div #experiences .job .left-block .year {
+  text-align: right;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+#expiriences-card div #experiences .job .left-block .company {
+  text-align: right;
+  font-weight: bold;
+  margin: 0 0 10px 15px;
+}
+#expiriences-card div #experiences .job .left-block .desc {
+  text-align: right;
+}
+#contact {
+  background-color: black;
+}
+#contact h2 {
+  color: white;
 }
 /*# sourceMappingURL=indexStyles.css.map */
